@@ -1,5 +1,5 @@
-require "algorithm_hangout/version"
+require 'sinatra'
 
-module AlgorithmHangout
-  # Your code goes here...
+get '/' do
+  "Hello World!"
 end
