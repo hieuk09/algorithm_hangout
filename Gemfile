@@ -8,4 +8,5 @@ group :development do
   gem 'dotenv'
   gem 'vcr'
   gem 'webmock'
+  gem 'byebug'
 end
