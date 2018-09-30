@@ -1,2 +1,3 @@
-require_relative 'lib/algorithm_hangout'
-run Sinatra::Application
+require './config/environment'
+
+run Hanami.app

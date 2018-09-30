@@ -1,14 +1,12 @@
-require "bundler/setup"
-require "algorithm_hangout"
+# Require this file for unit tests
+ENV['HANAMI_ENV'] ||= 'test'
 
-RSpec.configure do |config|
-  # Enable flags like --only-failures and --next-failure
-  config.example_status_persistence_file_path = ".rspec_status"
+require_relative '../config/environment'
+require 'vcr'
 
-  # Disable RSpec exposing methods globally on `Module` and `main`
-  config.disable_monkey_patching!
+Hanami.boot
 
-  config.expect_with :rspec do |c|
-    c.syntax = :expect
-  end
+VCR.configure do |config|
+  config.cassette_library_dir = "fixtures/vcr_cassettes"
+  config.hook_into :webmock
 end

@@ -1,5 +1,2 @@
-require 'sinatra'
-
-get '/' do
-  "Hello World!"
+module AlgorithmHangout
 end

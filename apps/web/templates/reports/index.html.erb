@@ -1,0 +1,33 @@
+<div class="container user-list">
+  <div class="row header">
+    <h1>Submitted</h1>
+  </div>
+
+  <table class="table">
+    <tr>
+      <th >Account</th>
+      <th >Score</th>
+    </tr>
+    <% reports[:submitted].each do |user| %>
+      <tr>
+        <td ><%= user[:account] %></td>
+        <td ><%= user[:score] %></td>
+      </tr>
+    <% end %>
+  </table>
+
+  <div class="row header">
+    <h1>Not Submitted</h1>
+  </div>
+
+  <table class="table">
+    <tr>
+      <th >Account</th>
+    </tr>
+    <% reports[:not_submitted].sort.each do |user| %>
+      <tr>
+        <td ><%= user %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
