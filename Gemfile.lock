@@ -114,6 +114,7 @@ GEM
     mail (2.7.0)
       mini_mime (>= 0.1.1)
     mini_mime (1.0.1)
+    multi_json (1.13.1)
     multipart-post (2.0.0)
     octokit (4.12.0)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -122,6 +123,8 @@ GEM
     puma (3.12.0)
     rack (2.0.5)
     rake (12.3.1)
+    rollbar (2.18.0)
+      multi_json
     rom (3.3.3)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.3)
@@ -187,6 +190,7 @@ DEPENDENCIES
   pg
   puma
   rake
+  rollbar
   rspec
   shotgun
   vcr

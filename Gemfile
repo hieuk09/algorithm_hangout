@@ -6,6 +6,7 @@ gem 'hanami-model', '~> 1.2'
 
 gem 'pg'
 gem 'octokit'
+gem 'rollbar'
 
 group :development do
   gem 'shotgun', platforms: :ruby
