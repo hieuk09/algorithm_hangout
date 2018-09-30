@@ -11,6 +11,8 @@ GEM
       debug_inspector (>= 0.0.1)
     coderay (1.1.2)
     concurrent-ruby (1.0.5)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
     debug_inspector (0.0.3)
     diff-lcs (1.3)
     dotenv (2.5.0)
@@ -102,6 +104,7 @@ GEM
     hanami-webconsole (0.1.0)
       better_errors (~> 2.4)
       binding_of_caller (~> 0.8)
+    hashdiff (0.3.7)
     http_router (0.11.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -153,6 +156,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
+    safe_yaml (1.0.4)
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)
       faraday (~> 0.8, < 1.0)
@@ -163,6 +167,11 @@ GEM
     transproc (1.0.2)
     url_mount (0.2.1)
       rack
+    vcr (4.0.0)
+    webmock (3.4.2)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
 
 PLATFORMS
   ruby
@@ -178,6 +187,8 @@ DEPENDENCIES
   rake
   rspec
   shotgun
+  vcr
+  webmock
 
 BUNDLED WITH
    1.16.2
