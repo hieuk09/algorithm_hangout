@@ -5,7 +5,7 @@ module Web::Controllers::Reports
     expose :reports
 
     def call(params)
-      @reports = SolutionCollector.new.report(41)
+      @reports = SolutionCollector.new.report(42)
     end
   end
 end
